@@ -28,7 +28,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86D-4x-xHH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86D-4x-xHH" customClass="BaseTextField" customModule="chatmate_postview" customModuleProvider="target">
                                 <rect key="frame" x="26" y="106" width="294" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,6 +70,7 @@
                     <connections>
                         <outlet property="locationSwitch" destination="6x3-u3-DXz" id="z8P-HK-hAw"/>
                         <outlet property="postBtn" destination="O7c-Ov-q3o" id="ggA-zd-BL9"/>
+                        <outlet property="titleTextField" destination="86D-4x-xHH" id="0ar-Yp-5XG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDAE91ED1B3B0A3800D6463B /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE91EC1B3B0A3800D6463B /* BaseTextField.swift */; };
 		DDC33C761B3AB2F90066DF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C751B3AB2F90066DF76 /* AppDelegate.swift */; };
 		DDC33C781B3AB2F90066DF76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C771B3AB2F90066DF76 /* ViewController.swift */; };
 		DDC33C7B1B3AB2F90066DF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC33C791B3AB2F90066DF76 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DDAE91EC1B3B0A3800D6463B /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		DDC33C701B3AB2F90066DF76 /* chatmate_postview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatmate_postview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC33C741B3AB2F90066DF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC33C751B3AB2F90066DF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				DDC33C971B3ABA650066DF76 /* BaseButton.swift */,
 				DDC33C9D1B3AC1A80066DF76 /* BaseLabel.swift */,
 				DDC33C9F1B3AC6F00066DF76 /* BaseSwitch.swift */,
+				DDAE91EC1B3B0A3800D6463B /* BaseTextField.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				DDC33CA01B3AC6F00066DF76 /* BaseSwitch.swift in Sources */,
 				DDC33C781B3AB2F90066DF76 /* ViewController.swift in Sources */,
+				DDAE91ED1B3B0A3800D6463B /* BaseTextField.swift in Sources */,
 				DDC33C961B3AB6B90066DF76 /* GetUserLocation.swift in Sources */,
 				DDC33C981B3ABA650066DF76 /* BaseButton.swift in Sources */,
 				DDC33C761B3AB2F90066DF76 /* AppDelegate.swift in Sources */,
@@ -457,6 +461,7 @@
 				DDC33C911B3AB2F90066DF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC33C921B3AB2F90066DF76 /* Build configuration list for PBXNativeTarget "chatmate_postviewTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +470,7 @@
 				DDC33C941B3AB2F90066DF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

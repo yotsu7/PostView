@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
     
    
     @IBOutlet weak var postBtn: BaseButton!
     @IBOutlet weak var locationSwitch: BaseSwitch!
+    @IBOutlet weak var titleTextField: BaseTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         postBtn.addTarget(self, action: "onClickPostBtn:", forControlEvents: .TouchUpInside)
         locationSwitch.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        titleTextField?.delegate = self
+    
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,6 +40,14 @@ class ViewController: UIViewController {
         else {
             locationSwitch.off()
         }
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool{
+        println("\(textField.text)")
+        
+        // キーボードを閉じる
+        textField.resignFirstResponder()
+        
+        return true
     }
 
 
