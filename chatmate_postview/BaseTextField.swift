@@ -12,13 +12,7 @@ class BaseTextField: UITextField {
     required init(coder aDecoder: NSCoder)  {
         super.init(coder: aDecoder)
     }
-    func textFieldShouldReturn(textField: UITextField) -> Bool{
-        println("\(textField.text)")
-        
-        textField.resignFirstResponder()
-        
-        return true
-    }
+
 
 }
 
