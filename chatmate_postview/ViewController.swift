@@ -9,15 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+   
+    @IBOutlet weak var postBtn: BaseButton!
+    @IBOutlet weak var locationSwitch: BaseSwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        postBtn.addTarget(self, action: "onClickPostBtn:", forControlEvents: .TouchUpInside)
+        locationSwitch.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func onClickPostBtn(sender: UIButton) {
+        postBtn.clickBtn()
+    }
+    internal func onClickMySwicth(sender: UISwitch) {
+        if sender.on {
+            locationSwitch.on()
+        }
+        else {
+            locationSwitch.off()
+        }
     }
 
 

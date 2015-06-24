@@ -13,6 +13,10 @@
 		DDC33C7D1B3AB2F90066DF76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC33C7C1B3AB2F90066DF76 /* Images.xcassets */; };
 		DDC33C801B3AB2F90066DF76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC33C7E1B3AB2F90066DF76 /* LaunchScreen.xib */; };
 		DDC33C8C1B3AB2F90066DF76 /* chatmate_postviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C8B1B3AB2F90066DF76 /* chatmate_postviewTests.swift */; };
+		DDC33C961B3AB6B90066DF76 /* GetUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C951B3AB6B90066DF76 /* GetUserLocation.swift */; };
+		DDC33C981B3ABA650066DF76 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C971B3ABA650066DF76 /* BaseButton.swift */; };
+		DDC33C9E1B3AC1A80066DF76 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C9D1B3AC1A80066DF76 /* BaseLabel.swift */; };
+		DDC33CA01B3AC6F00066DF76 /* BaseSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33C9F1B3AC6F00066DF76 /* BaseSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		DDC33C851B3AB2F90066DF76 /* chatmate_postviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatmate_postviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC33C8A1B3AB2F90066DF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC33C8B1B3AB2F90066DF76 /* chatmate_postviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatmate_postviewTests.swift; sourceTree = "<group>"; };
+		DDC33C951B3AB6B90066DF76 /* GetUserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserLocation.swift; sourceTree = "<group>"; };
+		DDC33C971B3ABA650066DF76 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		DDC33C9D1B3AC1A80066DF76 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		DDC33C9F1B3AC6F00066DF76 /* BaseSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,10 @@
 		DDC33C721B3AB2F90066DF76 /* chatmate_postview */ = {
 			isa = PBXGroup;
 			children = (
-				DDC33C751B3AB2F90066DF76 /* AppDelegate.swift */,
-				DDC33C771B3AB2F90066DF76 /* ViewController.swift */,
+				DDC33C9C1B3ABF2C0066DF76 /* chatmate with Swift */,
+				DDC33C9B1B3ABF1D0066DF76 /* Class */,
+				DDC33C9A1B3ABEF50066DF76 /* Controllers */,
+				DDC33C991B3ABED30066DF76 /* Views */,
 				DDC33C791B3AB2F90066DF76 /* Main.storyboard */,
 				DDC33C7C1B3AB2F90066DF76 /* Images.xcassets */,
 				DDC33C7E1B3AB2F90066DF76 /* LaunchScreen.xib */,
@@ -110,6 +120,40 @@
 				DDC33C8A1B3AB2F90066DF76 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDC33C991B3ABED30066DF76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDC33C971B3ABA650066DF76 /* BaseButton.swift */,
+				DDC33C9D1B3AC1A80066DF76 /* BaseLabel.swift */,
+				DDC33C9F1B3AC6F00066DF76 /* BaseSwitch.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DDC33C9A1B3ABEF50066DF76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDC33C771B3AB2F90066DF76 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DDC33C9B1B3ABF1D0066DF76 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				DDC33C951B3AB6B90066DF76 /* GetUserLocation.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		DDC33C9C1B3ABF2C0066DF76 /* chatmate with Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DDC33C751B3AB2F90066DF76 /* AppDelegate.swift */,
+			);
+			name = "chatmate with Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC33CA01B3AC6F00066DF76 /* BaseSwitch.swift in Sources */,
 				DDC33C781B3AB2F90066DF76 /* ViewController.swift in Sources */,
+				DDC33C961B3AB6B90066DF76 /* GetUserLocation.swift in Sources */,
+				DDC33C981B3ABA650066DF76 /* BaseButton.swift in Sources */,
 				DDC33C761B3AB2F90066DF76 /* AppDelegate.swift in Sources */,
+				DDC33C9E1B3AC1A80066DF76 /* BaseLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
